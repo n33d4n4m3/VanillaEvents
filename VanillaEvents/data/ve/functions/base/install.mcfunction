@@ -46,6 +46,7 @@ scoreboard objectives add VETmp.BatToggleSleepEvent.firstRunDone dummy
 scoreboard objectives add VE.BatToggleSleepEvent.priorState dummy
 scoreboard objectives add VE.BatToggleSleepEvent.newState dummy
 
+
 # PlayerMoveEvent
 scoreboard objectives add VESys.PlayerMoveEvent dummy
 scoreboard objectives add VESys.PlayerMoveEvent.isEnabled dummy

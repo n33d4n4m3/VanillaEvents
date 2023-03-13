@@ -29,4 +29,3 @@ execute if score $ VESys.BatToggleSleepEvent matches 1.. run scoreboard players 
 execute as @e[type=minecraft:bat] unless score $ VESys.BatToggleSleepEvent matches 1.. if score @s VETmp.BatToggleSleepEvent.firstRunDone matches 1 run scoreboard players set @s VETmp.BatToggleSleepEvent.firstRunDone 0
 execute unless score $ VESys.BatToggleSleepEvent matches 1.. run scoreboard players set $ VESys.BatToggleSleepEvent.isEnabled 0
 
-

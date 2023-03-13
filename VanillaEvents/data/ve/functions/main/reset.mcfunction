@@ -33,3 +33,5 @@ execute as @a[tag=VE.PlayerMovementStateTransitionEvent] run tag @s remove VE.Pl
 
 # BatToggleSleepEvent
 execute as @e[tag=VE.BatToggleSleepEvent] run tag @s remove VE.BatToggleSleepEvent
+
+

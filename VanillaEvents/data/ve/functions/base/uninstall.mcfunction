@@ -83,11 +83,11 @@ scoreboard objectives remove VETmp.PlayerMoveEvent.zDiffSqrd
 scoreboard objectives remove VETmp.PlayerMoveEvent.xzDiffSqrd
 scoreboard objectives remove VETmp.PlayerMoveEvent.xyzDiffSqrd
 scoreboard objectives remove VE.PlayerMoveEvent.willModify
-scoreboard objectives remove VE.PlayerMoveEvent.manX
-scoreboard objectives remove VE.PlayerMoveEvent.manY
-scoreboard objectives remove VE.PlayerMoveEvent.manZ
-scoreboard objectives remove VE.PlayerMoveEvent.manYaw
-scoreboard objectives remove VE.PlayerMoveEvent.manPitch
+scoreboard objectives remove VE.PlayerMoveEvent.modX
+scoreboard objectives remove VE.PlayerMoveEvent.modY
+scoreboard objectives remove VE.PlayerMoveEvent.modZ
+scoreboard objectives remove VE.PlayerMoveEvent.modYaw
+scoreboard objectives remove VE.PlayerMoveEvent.modPitch
 
 # PlayerMovementStateTransitionEvent
 scoreboard objectives remove VESys.PlayerMovementStateTransitionEvent
@@ -95,3 +95,5 @@ scoreboard objectives remove VESys.PlayerMovementStateTransitionEvent.isEnabled
 scoreboard objectives remove VETmp.PlayerMovementStateTransitionEvent.firstRunDone
 scoreboard objectives remove VE.PlayerMovementStateTransitionEvent.priorMovementState
 scoreboard objectives remove VE.PlayerMovementStateTransitionEvent.newMovementState
+
+datapack disable "file/VanillaEvents"

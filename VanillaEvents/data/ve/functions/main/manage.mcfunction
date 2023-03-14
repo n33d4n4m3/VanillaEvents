@@ -21,6 +21,14 @@ execute if score $ VESys.PlayerMovementStateTransitionEvent matches 1.. run scor
 execute as @a unless score $ VESys.PlayerMovementStateTransitionEvent matches 1.. if score @s VETmp.PlayerMovementStateTransitionEvent.firstRunDone matches 1 run scoreboard players set @s VETmp.PlayerMovementStateTransitionEvent.firstRunDone 0
 execute unless score $ VESys.PlayerMovementStateTransitionEvent matches 1.. run scoreboard players set $ VESys.PlayerMovementStateTransitionEvent.isEnabled 0
 
+# Functions for enable VE.EntityHealthUpdateEvent
+execute if score $ VESys.EntityHealthUpdateEvent matches 1.. run scoreboard players set $ VESys.EntityHealthUpdateEvent.isEnabled 1
+
+# Functions for disable VE.EntityHealthUpdateEvent
+execute as @e unless score $ VESys.EntityHealthUpdateEvent matches 1.. if score @s VETmp.EntityHealthUpdateEvent.firstRunDone matches 1 run scoreboard players set @s VETmp.EntityHealthUpdateEvent.firstRunDone 0
+execute unless score $ VESys.EntityHealthUpdateEvent matches 1.. run scoreboard players set $ VESys.EntityHealthUpdateEvent.isEnabled 0
+
+
 
 # Functions for enable VE.BatToggleSleepEvent
 execute if score $ VESys.BatToggleSleepEvent matches 1.. run scoreboard players set $ VESys.BatToggleSleepEvent.isEnabled 1

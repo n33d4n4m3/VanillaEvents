@@ -39,6 +39,16 @@ scoreboard objectives add VE.PlayerGameModeChangeEvent.newGameMode dummy
 scoreboard objectives add VE.PlayerGameModeChangeEvent.willModify dummy
 scoreboard objectives add VE.PlayerGameModeChangeEvent.modGameMode dummy
 
+# EntityHealthUpdateEvent
+scoreboard objectives add VESys.EntityHealthUpdateEvent dummy
+scoreboard objectives add VESys.EntityHealthUpdateEvent.isEnabled dummy
+scoreboard objectives add VETmp.EntityHealthUpdateEvent.firstRunDone dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.priorHealth dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.newHealth dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.wasPositive dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.wasNegative dummy
+
+
 # BatToggleSleepEvent
 scoreboard objectives add VESys.BatToggleSleepEvent dummy
 scoreboard objectives add VESys.BatToggleSleepEvent.isEnabled dummy

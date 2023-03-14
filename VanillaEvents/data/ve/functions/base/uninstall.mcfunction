@@ -36,6 +36,16 @@ scoreboard objectives remove VE.PlayerGameModeChangeEvent.newGameMode
 scoreboard objectives remove VE.PlayerGameModeChangeEvent.willModify
 scoreboard objectives remove VE.PlayerGameModeChangeEvent.modGameMode
 
+# EntityHealthUpdateEvent
+scoreboard objectives remove VESys.EntityHealthUpdateEvent
+scoreboard objectives remove VESys.EntityHealthUpdateEvent.isEnabled
+scoreboard objectives remove VETmp.EntityHealthUpdateEvent.firstRunDone
+scoreboard objectives remove VE.EntityHealthUpdateEvent.priorHealth
+scoreboard objectives remove VE.EntityHealthUpdateEvent.newHealth
+scoreboard objectives remove VE.EntityHealthUpdateEvent.wasPositive
+scoreboard objectives remove VE.EntityHealthUpdateEvent.wasNegative
+
+
 # BatToggleSleepEvent
 scoreboard objectives remove VESys.BatToggleSleepEvent
 scoreboard objectives remove VESys.BatToggleSleepEvent.isEnabled

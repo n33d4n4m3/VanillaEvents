@@ -31,6 +31,11 @@ execute as @a[tag=VE.PlayerMoveEvent] run tag @s remove VE.PlayerMoveEvent
 # PlayerMovementStateTransitionEvent
 execute as @a[tag=VE.PlayerMovementStateTransitionEvent] run tag @s remove VE.PlayerMovementStateTransitionEvent
 
+# EntityHealthUpdateEvent
+execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.wasPositive 0
+execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.wasNegative 0
+execute as @e[tag=VE.EntityHealthUpdateEvent] run tag @s remove VE.EntityHealthUpdateEvent
+
 # BatToggleSleepEvent
 execute as @e[tag=VE.BatToggleSleepEvent] run tag @s remove VE.BatToggleSleepEvent
 

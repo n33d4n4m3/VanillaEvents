@@ -4,6 +4,7 @@ scoreboard players add $ VESys.installRound 1
 scoreboard objectives add VE.Number dummy
 scoreboard players set -1 VE.Number -1
 scoreboard players set 2 VE.Number 2
+scoreboard players set 10 VE.Number 10
 
 # Utils
 # Square Root
@@ -47,6 +48,10 @@ scoreboard objectives add VE.EntityHealthUpdateEvent.priorHealth dummy
 scoreboard objectives add VE.EntityHealthUpdateEvent.newHealth dummy
 scoreboard objectives add VE.EntityHealthUpdateEvent.wasPositive dummy
 scoreboard objectives add VE.EntityHealthUpdateEvent.wasNegative dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.damageType dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.damageBypass dummy
+scoreboard objectives add VE.EntityHealthUpdateEvent.damageResisted minecraft.custom:damage_resisted
+scoreboard objectives add VE.EntityHealthUpdateEvent.difference dummy
 
 
 # BatToggleSleepEvent

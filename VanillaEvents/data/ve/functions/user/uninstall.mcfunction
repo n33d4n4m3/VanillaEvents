@@ -44,6 +44,10 @@ scoreboard objectives remove VE.EntityHealthUpdateEvent.priorHealth
 scoreboard objectives remove VE.EntityHealthUpdateEvent.newHealth
 scoreboard objectives remove VE.EntityHealthUpdateEvent.wasPositive
 scoreboard objectives remove VE.EntityHealthUpdateEvent.wasNegative
+scoreboard objectives remove VE.EntityHealthUpdateEvent.damageType
+scoreboard objectives remove VE.EntityHealthUpdateEvent.damageBypass
+scoreboard objectives remove VE.EntityHealthUpdateEvent.damageResisted
+scoreboard objectives remove VE.EntityHealthUpdateEvent.difference
 
 
 # BatToggleSleepEvent

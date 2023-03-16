@@ -34,6 +34,10 @@ execute as @a[tag=VE.PlayerMovementStateTransitionEvent] run tag @s remove VE.Pl
 # EntityHealthUpdateEvent
 execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.wasPositive 0
 execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.wasNegative 0
+execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.damageType 0
+execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.damageBypass 0
+execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.damageResisted 0
+execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.difference 0
 execute as @e[tag=VE.EntityHealthUpdateEvent] run tag @s remove VE.EntityHealthUpdateEvent
 
 # BatToggleSleepEvent

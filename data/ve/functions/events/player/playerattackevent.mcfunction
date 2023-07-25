@@ -37,3 +37,4 @@ execute if score @s VETmp.PlayerAttackEvent.smiteLevel matches 1.. run scoreboar
 
 # Determine if the hit was critical (Total damage dealt > Possible attack damage)
 execute if score @s VE.PlayerAttackEvent.damageDealt > @s VETmp.PlayerAttackEvent.attackDamage run scoreboard players set @s VE.PlayerAttackEvent.criticalHit 1
+execute unless score @s VE.PlayerAttackEvent.damageDealt > @s VETmp.PlayerAttackEvent.attackDamage run scoreboard players set @s VE.PlayerAttackEvent.criticalHit 0

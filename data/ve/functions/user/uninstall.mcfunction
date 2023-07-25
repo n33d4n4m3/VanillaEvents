@@ -1,4 +1,5 @@
 # Base
+scoreboard objectives remove VESys.Build
 scoreboard objectives remove VESys.installRound
 scoreboard objectives remove VE.Number
 
@@ -124,3 +125,6 @@ scoreboard objectives remove VE.PlayerMovementStateTransitionEvent.priorMovement
 scoreboard objectives remove VE.PlayerMovementStateTransitionEvent.newMovementState
 
 datapack disable "file/VanillaEvents"
+datapack disable "file/VanillaEvents-main"
+datapack disable "file/VanillaEvents.zip"
+datapack disable "file/VanillaEvents-main.zip"

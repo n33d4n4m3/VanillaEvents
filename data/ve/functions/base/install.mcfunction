@@ -1,4 +1,5 @@
 # Base
+scoreboard objectives add VESys.Build dummy
 scoreboard objectives add VESys.installRound dummy
 scoreboard players add $ VESys.installRound 1
 scoreboard objectives add VE.Number dummy
@@ -132,6 +133,15 @@ scoreboard objectives add VE.PlayerMovementStateTransitionEvent.priorMovementSta
 scoreboard objectives add VE.PlayerMovementStateTransitionEvent.newMovementState dummy
 
 execute if score $ VESys.installRound matches 1 run datapack disable "file/VanillaEvents"
+execute if score $ VESys.installRound matches 1 run datapack disable "file/VanillaEvents-main"
+execute if score $ VESys.installRound matches 1 run datapack disable "file/VanillaEvents.zip"
+execute if score $ VESys.installRound matches 1 run datapack disable "file/VanillaEvents-main.zip"
+
 execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents" first
-execute if score $ VESys.installRound matches 1 run tellraw @a ["",{"text":"VE","color":"yellow"},": VanillaEvents (Very unstable development build) was installed successfully."]
+execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents-main" first
+execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents.zip" first
+execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents-main.zip" first
+
+execute if score $ VESys.installRound matches 1 run scoreboard players set $ VESys.Build 10
+execute if score $ VESys.installRound matches 1 run tellraw @a ["",{"text":"VE","color":"yellow"},": VanillaEvents ",{"text":"Build ","color":"yellow"},{"score":{"name":"$","objective":"VESys.Build"},"color":"yellow"}," was installed successfully."]
 execute if score $ VESys.installRound matches 2.. run scoreboard players set $ VESys.installRound 0

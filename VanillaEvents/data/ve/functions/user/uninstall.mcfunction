@@ -49,6 +49,19 @@ scoreboard objectives remove VE.EntityHealthUpdateEvent.damageBypass
 scoreboard objectives remove VE.EntityHealthUpdateEvent.damageResisted
 scoreboard objectives remove VE.EntityHealthUpdateEvent.difference
 
+# PlayerAttackEvent
+scoreboard objectives remove VESys.PlayerAttackEvent
+scoreboard objectives remove VESys.PlayerAttackEvent.isEnabled
+scoreboard objectives remove VE.PlayerAttackEvent.damageDealt
+scoreboard objectives remove VE.PlayerAttackEvent.damageAbsorbed
+scoreboard objectives remove VE.PlayerAttackEvent.damageResisted
+scoreboard objectives remove VE.PlayerAttackEvent.opponentSurvived
+scoreboard objectives remove VE.PlayerAttackEvent.criticalHit
+scoreboard objectives remove VETmp.PlayerAttackEvent.attackDamage
+scoreboard objectives remove VETmp.PlayerAttackEvent.smiteLevel
+scoreboard objectives remove VETmp.PlayerAttackEvent.sharpnessLevel
+scoreboard objectives remove VETmp.PlayerAttackEvent.baneLevel
+
 
 # BatToggleSleepEvent
 scoreboard objectives remove VESys.BatToggleSleepEvent

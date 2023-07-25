@@ -4,7 +4,9 @@ scoreboard players add $ VESys.installRound 1
 scoreboard objectives add VE.Number dummy
 scoreboard players set -1 VE.Number -1
 scoreboard players set 2 VE.Number 2
+scoreboard players set 5 VE.Number 5
 scoreboard players set 10 VE.Number 10
+scoreboard players set 25 VE.Number 25
 
 # Utils
 # Square Root
@@ -52,6 +54,20 @@ scoreboard objectives add VE.EntityHealthUpdateEvent.damageType dummy
 scoreboard objectives add VE.EntityHealthUpdateEvent.damageBypass dummy
 scoreboard objectives add VE.EntityHealthUpdateEvent.damageResisted minecraft.custom:damage_resisted
 scoreboard objectives add VE.EntityHealthUpdateEvent.difference dummy
+
+# PlayerAttackEvent
+scoreboard objectives add VESys.PlayerAttackEvent dummy
+scoreboard objectives add VESys.PlayerAttackEvent.isEnabled dummy
+scoreboard objectives add VE.PlayerAttackEvent.damageDealt minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add VE.PlayerAttackEvent.damageAbsorbed minecraft.custom:minecraft.damage_dealt_absorbed
+scoreboard objectives add VE.PlayerAttackEvent.damageResisted minecraft.custom:minecraft.damage_dealt_resisted
+scoreboard objectives add VE.PlayerAttackEvent.opponentSurvived dummy
+scoreboard objectives add VE.PlayerAttackEvent.criticalHit dummy
+scoreboard objectives add VETmp.PlayerAttackEvent.attackDamage dummy
+scoreboard objectives add VETmp.PlayerAttackEvent.sharpnessLevel dummy
+scoreboard objectives add VETmp.PlayerAttackEvent.baneLevel dummy
+scoreboard objectives add VETmp.PlayerAttackEvent.smiteLevel dummy
+
 
 
 # BatToggleSleepEvent

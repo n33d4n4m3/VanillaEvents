@@ -28,6 +28,12 @@ execute if score $ VESys.EntityHealthUpdateEvent matches 1.. run scoreboard play
 execute as @e unless score $ VESys.EntityHealthUpdateEvent matches 1.. if score @s VETmp.EntityHealthUpdateEvent.firstRunDone matches 1 run scoreboard players set @s VETmp.EntityHealthUpdateEvent.firstRunDone 0
 execute unless score $ VESys.EntityHealthUpdateEvent matches 1.. run scoreboard players set $ VESys.EntityHealthUpdateEvent.isEnabled 0
 
+# Functions for enable VE.PlayerAttackEvent
+execute if score $ VESys.PlayerAttackEvent matches 1.. unless score $ VESys.PlayerAttackEvent.isEnabled matches 1 run advancement revoke @a only ve:player_hurt_entity
+execute if score $ VESys.PlayerAttackEvent matches 1.. run scoreboard players set $ VESys.PlayerAttackEvent.isEnabled 1
+
+# Functions for disable VE.PlayerAttackEvent
+execute unless score $ VESys.PlayerAttackEvent matches 1.. run scoreboard players set $ VESys.PlayerAttackEvent.isEnabled 0
 
 
 # Functions for enable VE.BatToggleSleepEvent

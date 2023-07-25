@@ -36,9 +36,22 @@ execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.E
 execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.wasNegative 0
 execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.damageType 0
 execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.damageBypass 0
-execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.damageResisted 0
+
 execute as @e[tag=VE.EntityHealthUpdateEvent] run scoreboard players set @s VE.EntityHealthUpdateEvent.difference 0
 execute as @e[tag=VE.EntityHealthUpdateEvent] run tag @s remove VE.EntityHealthUpdateEvent
+
+# PlayerAttackEvent
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VE.PlayerAttackEvent.damageDealt 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VE.PlayerAttackEvent.damageAbsorbed 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VE.PlayerAttackEvent.damageResisted 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VE.PlayerAttackEvent.opponentSurvived 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VE.PlayerAttackEvent.criticalHit 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VETmp.PlayerAttackEvent.attackDamage 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VETmp.PlayerAttackEvent.baneLevel 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VETmp.PlayerAttackEvent.smiteLevel 0
+execute as @a[tag=VE.PlayerAttackEvent] run scoreboard players set @s VETmp.PlayerAttackEvent.sharpnessLevel 0
+execute as @a[tag=VE.PlayerAttackEvent] run tag @s remove VE.PlayerAttackEvent
+
 
 # BatToggleSleepEvent
 execute as @e[tag=VE.BatToggleSleepEvent] run tag @s remove VE.BatToggleSleepEvent

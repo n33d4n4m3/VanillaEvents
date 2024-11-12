@@ -13,7 +13,7 @@ execute if entity @s[advancements={ve:player_killed_entity=true}] run advancemen
 
 # Determine whether the hit was critical or not.
 # Determine attack damage, depending on the item the player is holding
-execute store result score @s VETmp.PlayerAttackEvent.attackDamage run attribute @s generic.attack_damage get 10
+execute store result score @s VETmp.PlayerAttackEvent.attackDamage run attribute @s minecraft:attack_damage get 10
 # -> Handle the attack with an item enchanted with sharpness. AtckDmg = AtckDmg + (5 * Level) + 5
 execute store result score @s VETmp.PlayerAttackEvent.sharpnessLevel run data get entity @s SelectedItem.components.minecraft:enchantments.levels.minecraft:sharpness
 execute if score @s VETmp.PlayerAttackEvent.sharpnessLevel matches 1.. run scoreboard players operation @s VETmp.PlayerAttackEvent.sharpnessLevel *= 5 VE.Number

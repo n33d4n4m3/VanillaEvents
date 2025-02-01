@@ -143,5 +143,5 @@ execute if score $ VESys.installRound matches 1 run datapack enable "file/Vanill
 execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents-main.zip" first
 
 execute if score $ VESys.installRound matches 1 run scoreboard players set $ VESys.Build 20
-execute if score $ VESys.installRound matches 1 run tellraw @a ["",{"text":"VE","color":"yellow"},": VanillaEvents ",{"text":"Build ","color":"yellow"},{"score":{"name":"$","objective":"VESys.Build"},"color":"yellow"}," was installed successfully."]
+execute if score $ VESys.installRound matches 1 run tellraw @a [{"text":""},{"text":"VE","color":"yellow"},{"text":": ","color":"gray"},{"text":"VanillaEvents ","color":"gray"},{"text":"Build ","color":"yellow"},{"score":{"name":"$","objective":"VESys.Build"},"color":"yellow"},{"text":" has been loaded successfully.","color":"gray"}]
 execute if score $ VESys.installRound matches 2.. run scoreboard players set $ VESys.installRound 0

@@ -4,6 +4,8 @@
 - retrieve information/details and
 - modify or cancel the events.
 
+VanillaEvents is compatible with Minecraft 1.21.3-1.21.4.
+
 
 ### What are events?
 

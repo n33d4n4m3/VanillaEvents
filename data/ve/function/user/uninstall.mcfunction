@@ -10,6 +10,7 @@ scoreboard objectives remove VEUtil.sqrt.output
 scoreboard objectives remove VEUtil.sqrt.field1
 scoreboard objectives remove VEUtil.sqrt.field2
 scoreboard objectives remove VEUtil.sqrt.field3
+scoreboard objectives remove VEUtil.sqrt.tick
 
 # Globals
 # currentMovementState

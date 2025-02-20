@@ -98,19 +98,29 @@ execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChange
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChanged matches 1 run scoreboard players operation @s VETmp.PlayerMoveEvent.xzDiffSqrd += @s VETmp.PlayerMoveEvent.zDiffSqrd
 
 # Step 3: Calculate the Square root of the squared distances.
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.field1
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.field2
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.field3
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.input
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.output
+
+
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players operation @s VEUtil.sqrt.input = @s VETmp.PlayerMoveEvent.xyzDiffSqrd
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players operation @s VEUtil.sqrt.field3 = @s VEUtil.sqrt.input
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run function ve:util/sqrt
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.tick
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasPositionChanged matches 1 run scoreboard players operation @s VE.PlayerMoveEvent.distance3D = @s VEUtil.sqrt.output
 
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChanged matches 1 run scoreboard players operation @s VEUtil.sqrt.input = @s VETmp.PlayerMoveEvent.xzDiffSqrd
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChanged matches 1 run scoreboard players operation @s VEUtil.sqrt.field3 = @s VEUtil.sqrt.input
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChanged matches 1 run function ve:util/sqrt
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.tick
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasXZChanged matches 1 run scoreboard players operation @s VE.PlayerMoveEvent.distanceHorizontal = @s VEUtil.sqrt.output
 
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasYChanged matches 1 run scoreboard players operation @s VEUtil.sqrt.input = @s VETmp.PlayerMoveEvent.yDiffSqrd
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasYChanged matches 1 run scoreboard players operation @s VEUtil.sqrt.field3 = @s VEUtil.sqrt.input
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasYChanged matches 1 run function ve:util/sqrt
+execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasYChanged matches 1 run scoreboard players reset @s VEUtil.sqrt.tick
 execute as @a[tag=VE.PlayerMoveEvent] if score @s VE.PlayerMoveEvent.hasYChanged matches 1 run scoreboard players operation @s VE.PlayerMoveEvent.distanceVertical = @s VEUtil.sqrt.output
 
 # First run done.

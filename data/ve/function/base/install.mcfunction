@@ -16,6 +16,7 @@ scoreboard objectives add VEUtil.sqrt.output dummy
 scoreboard objectives add VEUtil.sqrt.field1 dummy
 scoreboard objectives add VEUtil.sqrt.field2 dummy
 scoreboard objectives add VEUtil.sqrt.field3 dummy
+scoreboard objectives add VEUtil.sqrt.tick dummy
 
 # Globals
 # currentMovementState

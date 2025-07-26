@@ -143,6 +143,6 @@ execute if score $ VESys.installRound matches 1 run datapack enable "file/Vanill
 execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents.zip" first
 execute if score $ VESys.installRound matches 1 run datapack enable "file/VanillaEvents-main.zip" first
 
-execute if score $ VESys.installRound matches 1 run scoreboard players set $ VESys.Build 35
-execute if score $ VESys.installRound matches 1 run tellraw @a [{"text":""},{"text":"VE","color":"yellow"},{"text":": ","color":"gray"},{"text":"VanillaEvents ","color":"gray"},{"text":"Build ","color":"yellow"},{"score":{"name":"$","objective":"VESys.Build"},"color":"yellow"},{"text":" for Minecraft 1.21.6 has been loaded successfully.","color":"gray"}]
+execute if score $ VESys.installRound matches 1 run scoreboard players set $ VESys.Build 36
+execute if score $ VESys.installRound matches 1 run tellraw @a [{"text":""},{"text":"VE","color":"yellow"},{"text":": ","color":"gray"},{"text":"VanillaEvents ","color":"gray"},{"text":"Build ","color":"yellow"},{"score":{"name":"$","objective":"VESys.Build"},"color":"yellow"},{"text":" for Minecraft 1.21.6-1.21.8 has been loaded successfully.","color":"gray"}]
 execute if score $ VESys.installRound matches 2.. run scoreboard players set $ VESys.installRound 0
